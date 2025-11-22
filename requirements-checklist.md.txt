@@ -1,0 +1,31 @@
+# Requirements Checklist
+
+## 1. System Requirements
+- Ubuntu 22.04 LTS server (2 vCPU, 4 GB RAM minimum)
+- Docker Engine >= 24
+- Docker Compose plugin
+- Open ports: 80, 443, 22
+
+## 2. Backend Dependencies
+- Node.js >= 18 (for local dev)
+- NPM or Yarn
+- Environment variables:
+  - DATABASE="mongodb+srv://..."
+  - JWT_SECRET="..."
+  - EMAIL_HOST, EMAIL_PORT, EMAIL_USER, EMAIL_PASS
+- External:
+  - MongoDB Atlas or self-hosted MongoDB
+
+## 3. Frontend Dependencies
+- Node.js >= 18
+- NPM / Yarn
+
+## 4. DevOps / Tooling
+- Docker Hub account (for image registry)
+- GitHub repository with Actions enabled
+- AWS account (for EC2 + CloudWatch)
+- SSH key pair for deployment
+
+## 5. Optional / Nice-to-have
+- Domain name (for Apache vhost)
+- TLS certificate (Let’s Encrypt or ACM via ALB)
